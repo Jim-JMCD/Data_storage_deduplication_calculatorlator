@@ -1,3 +1,13 @@
 # Dedupe-calculator
-A calculator for storage and transmission of deduplicated data presentation in charts and tables  
-This caclculates theortetical valuse for data storage and transmission, the real world is can be different place with many factoras affecting data compresson using deplication  
+Calculations are theoretical and used to illustrate the dynamics of the impact deduplication.  They are not likely to match vendor calculations because there are many factors that influence deduplication capacity planning. 
+
+Network throughput estimates and storage requirements are never exact because:
+ • Some deduplication engines compress data in the individual dedupe chunks before its added to the dedupe repository. 
+ • Deduplication overhead is ignored as it can be variable depending upon data type and deduplication implementation.  
+ • Data that is encrypted, compressed or constantly unique could render deduplication rate less effective.  
+ • Data that is made up very small chunks will reduce the effectiveness of deduplication.   
+   Some deduplication engines ignore compressed data and/or data chunks that are too small. 
+ • Transport layer technologies like WAN optimisation are ignored in calculations.
+
+Author : Jim J. McDonald, Sydney
+
