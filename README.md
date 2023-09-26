@@ -1,4 +1,4 @@
-# Dedupe-calculator
+# Dedupe-calculator for Storage and Network bandwidth requirements
 Calculations are theoretical and used to illustrate the dynamics of the impact deduplication.  They are not likely to match vendor calculations because there are many factors that influence deduplication capacity planning. Network throughput estimates and storage requirements are never exact because:
 
  • Some deduplication engines compress data in the individual dedupe chunks before its added to the dedupe repository. 
